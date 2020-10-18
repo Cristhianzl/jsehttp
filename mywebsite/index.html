@@ -2,11 +2,21 @@
 <html>
 	<head>
 		<meta chatset="utf-8">
+		<script type ="text/javascript" src="js/main.js"></script>
 		<title> Cristhian Website!</title>
 		<link rel="stylesheet" href="style.css">
 	</head>
-	<body>
-	<header>
+	<body onload = "load()">
+		<button type = "button" onclick="clicou()" >Clique Aqui</button>
+		<p id="agradecimento" onclick="redirecionar()"></p>
+		<p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)"> "Passe o mouse aqui!"</p>	
+		<select onchange = "funcaoChange(this)">
+			<option value = "1">Valor 1</option>
+			<option value = "2">Valor 2</option>
+			<option value = "3">Valor 3</option>
+
+		</select>
+		<header>
 		<img src="cris.jpg" alt="fotinha bonitinha minha" class="photo">
 	<h1 id="title">Cristhian The Movie!</h1>
 	</header>
